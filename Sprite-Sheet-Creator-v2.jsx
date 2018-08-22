@@ -1,7 +1,7 @@
 /*
 The MIT License (MIT)
 
-See: LICENSE
+See: https://github.com/AndresCuervo/photoshop-spritesheet-creator/blob/master/LICENSE
 
 Full respository: https://github.com/AndresCuervo/photoshop-spritesheet-creator
 */
