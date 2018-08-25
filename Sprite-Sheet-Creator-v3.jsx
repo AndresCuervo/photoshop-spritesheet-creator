@@ -2,15 +2,16 @@
 The MIT License (MIT)
 
 See: https://github.com/AndresCuervo/photoshop-spritesheet-creator/blob/master/LICENSE
-
-Full respository: https://github.com/AndresCuervo/photoshop-spritesheet-creator
 */
+
 
 /*
 <javascriptresource>
     <name>Create Sprite Sheet from Layers v3</name>
 </javascriptresource>
 */
+
+/* Repository link: */
 
 // Duplicate current Document
 app.activeDocument.duplicate();
@@ -32,7 +33,7 @@ var i, prefRulerUnits, prefTypeUnits, frames, frameWidth, frameHeight, mp, dialo
     },
 
     onRowsChanged = function () {
-
+        // TODO: Add a box that tells you how many sprites per row there will be!!! So you can preview if it's easily divisble :)
         rows = Number(dialog.msgPnl.rowsGrp.rows.text);
         columns = Math.ceil(frames / rows);
         dialog.msgPnl.columns.text = 'Columns: ' + columns;
@@ -174,6 +175,3 @@ if (app && app.preferences) {
     app.preferences.typeUnits = prefTypeUnits;
     app.preferences.rulerUnits = prefRulerUnits;
 }
-
-
-
